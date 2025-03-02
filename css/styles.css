@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar personalizado */
+.custom-navbar {
+    background: linear-gradient(to right, #6f42c1, #4e73df);
+    padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    color: rgba(181, 85, 225, 0.8);
+}
+
+.custom-navbar .btn-light {
+    color: #292335;
+    font-weight: 500;
+}
+
+/* Header personalizado */
+.custom-header {
+    background: linear-gradient(to bottom, #f8f9fa, white);
+    padding: 6rem 0;
+}
+
+.custom-button {
+    background-color: #6f42c1;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #5a32a3;
+    transform: translateY(-2px);
+}
+
+/* Comparación de imágenes */
+.image-comparison {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.before,
+.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before img,
+.after img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.after {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.3s ease-in-out;
+}
+
+/* Tarjetas de características */
+.feature-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(111, 66, 193, 0.1);
+    margin-bottom: 1rem;
+}
+
+.icon-box i {
+    font-size: 2rem;
+    color: #6f42c1;
+}
+
+/* Tarjetas de equipo */
+.team-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Footer personalizado */
+.custom-footer {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #6f42c1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .custom-header {
+        padding: 4rem 0;
+    }
+
+    .image-comparison {
+        height: 300px;
+    }
+
+    .team-card {
+        margin-bottom: 2rem;
+    }
+}
